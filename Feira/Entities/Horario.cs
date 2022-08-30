@@ -13,15 +13,15 @@ namespace Feira
         }
         private int CalculoDeAtraso()
         {
-            int diferença;
+            int diferenca = 0;
             if (Horas < 8 && Minutos < 01 || Horas < 7)
             {
                 return 0;
             }
             else
             {
-                diferença = (Horas - 7) * 60 + Minutos;
-                return  + diferença;
+                diferenca = (Horas - 7) * 60 + Minutos;
+                return  + diferenca;
             }
         }
         public override string ToString()
