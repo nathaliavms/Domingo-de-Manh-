@@ -14,8 +14,8 @@ namespace Feira
                 var horas = int.Parse(HorarioInformado[0]);
                 var minutos = int.Parse(HorarioInformado[1]);
 
-                Horario Horario = new Horario(horas, minutos);
-                Horario.CalculoDeAtraso();
+                CalcularHoraDaFeira horario = new CalcularHoraDaFeira(horas, minutos);
+                Console.WriteLine(horario);
             }
         }
     }
